@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bible Hangman</title>
+  </head>
+  <body>
+    <h1>Bible Hangman</h1>
+    <!-- this contains the word, hint and letter options -->
+    <div class="hangman-word">
+      <!-- keeps track on incorrect letter guesses -->
+      <div class="strikes"></div>
+      
+      <!-- the hidden-word is pulled from the hangmanWords object and disguised show players know the number of letter and when they guess a correct letter its reveals -->
+      <div class="hidden-word"></div>
+      <div class="hint"></div>
+      <div class="letter-options"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scriptHangman.js" type="module"></script>
+  </body>
+</html>
